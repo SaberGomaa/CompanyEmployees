@@ -10,7 +10,13 @@
                 builder.AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader());
-            });    
-        
+            });
+
+        public static void ConfiguerIISIntergration(this IServiceCollection services) =>
+            services.Configure<IISOptions>(
+                options =>
+                {
+
+                });
     }
 }
