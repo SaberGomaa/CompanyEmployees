@@ -16,6 +16,11 @@
             services.Configure<IISOptions>(
                 options =>
                 {
+                    // some options 
+
+                    //options.AutomaticAuthentication = true;
+                    //options.AuthenticationDisplayName =null;
+                    //options.ForwardClientCertificate = true;
 
                 });
     }
